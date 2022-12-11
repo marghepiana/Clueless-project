@@ -12,7 +12,9 @@ enum Colors{
     PINK = 6,
     BLACK = 7,
     WHITE = 8,
-    BROWN = 9,
+    GRAY = 9,
+    CYAN = 10;
+    UGLY = 11;
 };
 
 //change this based on the texutre analysis tool
