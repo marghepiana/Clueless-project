@@ -65,7 +65,7 @@ int getRGBArray(string filename, int* redArray, int* greenArray, int* blueArray)
 
     }
 
-    cout<<i;
+    //cout<<i;
 
 image.close();
 //return 0;
@@ -89,17 +89,18 @@ int main(){
     double blueAvg = 0;
 
     for (int i = 0; i < numPixels; i ++){
-        redAvg += *redValues;
-        greenAvg += *greenValues;
-        blueAvg += *blueValues;
+        redAvg += redValues[i];
+        greenAvg += greenValues[i];
+        blueAvg += blueValues[i];
     }
-    
+
     redAvg = redAvg/numPixels;
     greenAvg = greenAvg/numPixels;
     blueAvg = blueAvg/numPixels;
+    
 
-    cout << "Red average is: " << redAvg;
-    cout << "Green average is: " << greenAvg;
-    cout << "Blue average is: " << blueAvg;
+    cout << "Red average is: " << redAvg << endl;
+    cout << "Green average is: " << greenAvg << endl;
+    cout << "Blue average is: " << blueAvg << endl;
 
 }
