@@ -25,7 +25,7 @@ int GetColor(){
 	else if (r == 2 * g && g >= 2* b)
 		color = ORANGE;
 	else if ((r == 0 && b == 0) || ((g == 2 * b) && b >= 2 * r )|| ((g == 2 * r) && r >= 2 * b))
-		color = GREEN
+		color = GREEN;
 	else if ((g == b) && (g >= r + 50))
 		color = CYAN;
 	else if (((b > 2 * g) && (b > = 4 * r)) ||( r == 0 )&& (g == 0))
