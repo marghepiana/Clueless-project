@@ -3,10 +3,10 @@ using namespace std;
 #include "GetColors.h"
 #include "Clothing.h"
 
-int GetColors(){
-	r = getRed();
-	b = getBlue();
-	g = getGreen();
+int GetColors(Clothing c1){
+	r = getRed(c1);
+	b = getBlue(c1);
+	g = getGreen(c1);
 
 	if (r == b == g == 255)
 		color = WHITE;
