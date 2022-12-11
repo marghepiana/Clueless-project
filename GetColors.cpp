@@ -3,7 +3,7 @@ using namespace std;
 #include "GetColor.h"
 #include "Clothing.h"
 
-int GetColor(){
+int GetColors(){
 	r = getRed();
 	b = getBlue();
 	g = getGreen();
