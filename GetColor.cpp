@@ -1,7 +1,9 @@
-//based on RGB values, says which color it is on color wheel
-//mostly just basic colors, if it can't fit into a basic color it is ugly
 
-GetColor(){
+using namespace std;
+#include "GetColor.h"
+#include "Clothing.h"
+
+int GetColor(){
 	r = getRed();
 	b = getBlue();
 	g = getGreen();
@@ -31,7 +33,6 @@ GetColor(){
 	else
 		color = UGLY;
 
-	
 	return color;
 }
 
