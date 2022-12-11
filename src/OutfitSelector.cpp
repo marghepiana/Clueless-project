@@ -5,6 +5,7 @@
 #include "Jacket.h"
 #include "Bottom.h"
 #include "Footwear.h"
+#include "isCompatible.h"
 #include <string>
 #include <iostream>
 
