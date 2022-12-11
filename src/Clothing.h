@@ -13,8 +13,8 @@ enum Colors{
     BLACK = 7,
     WHITE = 8,
     GRAY = 9,
-    CYAN = 10;
-    UGLY = 11;
+    CYAN = 10,
+    UGLY = 11,
 };
 
 //change this based on the texutre analysis tool
@@ -30,14 +30,14 @@ enum Textures{
 };
 
 class Clothing{
-
-    protected:
+    
+    public:
         int color;
-        int texture;
+        //int texture;
         Clothing();
+        //int getTexture();
+        void SetColor(string filename);
         int getColor();
-        int getTexture();
-
 };
 
 #endif
