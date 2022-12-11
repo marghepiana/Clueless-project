@@ -46,5 +46,11 @@ int main(){
     for (int i = 0; i < 5; i++){
 
     }
+    
+    bool slay = isCompatible(top, bottom);
+    if (slay == true)
+        cout << "SLAY QUEEN! your fit FIRE! Outfit is cute girliepops :) " << endl;
+    else
+        cout << "Ew! As if! Those colors do not go. Fit is UGGO :(" << endl;
 
 }
