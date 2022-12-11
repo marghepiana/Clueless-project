@@ -1,6 +1,6 @@
 
 using namespace std;
-#include "GetColor.h"
+#include "GetColors.h"
 #include "Clothing.h"
 
 int GetColors(){
