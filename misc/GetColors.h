@@ -6,6 +6,6 @@ using namespace std;
 
 //based on RGB values, says which color it is on color wheel
 //mostly just basic colors, if it can't fit into a basic color it is ugly
-int GetColors();
+int GetColors(Clothing);
 
 #endif
