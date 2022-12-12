@@ -30,7 +30,7 @@ void Clothing::SetColor(string filename){
 	int* blueValues = new int[10000];
 
 	
-    	// the functions that will return the average r g b value are called and their value is stored in an integer
+    // the functions that will return the average r g b value are called and their value is stored in an integer
 	r = getRed(filename, redValues, greenValues, blueValues);
 	g = getGreen(filename, redValues, greenValues, blueValues);
 	b = getBlue(filename, redValues, greenValues, blueValues);
@@ -62,7 +62,7 @@ void Clothing::SetColor(string filename){
     else
         color = UGLY;
 	
-	// once used, to avoid memory leak, the arrays created in the heap are deleted
+	//once used, to avoid memory leak, the arrays created in the heap are deleted
 		
 	delete[] redValues;
 	delete[] greenValues;
