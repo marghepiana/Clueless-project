@@ -1,0 +1,6 @@
+﻿  main.cpp
+C:\ImGuiApps\MyApplication\examples\example_win32_directx9\main.cpp(208,22): warning C4456: declaration of 'io' hides previous local declaration
+C:\ImGuiApps\MyApplication\examples\example_win32_directx9\main.cpp(49,14): message : see declaration of 'io'
+C:\ImGuiApps\MyApplication\examples\example_win32_directx9\main.cpp(90,10): warning C4189: 'show_demo_window': local variable is initialized but not referenced
+C:\ImGuiApps\MyApplication\examples\example_win32_directx9\main.cpp(91,10): warning C4189: 'show_another_window': local variable is initialized but not referenced
+  example_win32_directx9.vcxproj -> C:\ImGuiApps\MyApplication\examples\example_win32_directx9\Debug\example_win32_directx9.exe
