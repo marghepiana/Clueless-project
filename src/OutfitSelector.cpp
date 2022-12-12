@@ -16,7 +16,6 @@ int main(){
     string headwearImageName, topImageName, jacketImageName, bottomImageName, footwearImageName;
 
     //user commands and feedback
-    /*
     cout << "Enter headwear image name: ";
     cin >> headwearImageName;
     cout << "Enter top image name: ";
@@ -27,27 +26,20 @@ int main(){
     cin >> bottomImageName;
     cout << "Enter footwear image name: ";
     cin >> footwearImageName;
-    */
 
-    headwearImageName = "prova.ppm";
-    topImageName = "prova.ppm";
-    jacketImageName = "prova.ppm";
-    bottomImageName = "prova.ppm";
-    footwearImageName = "prova.ppm";
-
+    //creates clothing objects
     Clothing* hat = new Headwear();
     Clothing* shirt = new Top();
     Clothing* coat = new Jacket();
     Clothing* bottom = new Bottom();
     Clothing* shoes = new Footwear();
 
-  
+    //sets colors of each object based on their respective files
     hat->SetColor(headwearImageName);
     shirt->SetColor(topImageName);
     coat->SetColor(jacketImageName);
     bottom->SetColor(bottomImageName);
     shoes->SetColor(footwearImageName);
-
 
     bool isCute = isCompatible(shirt, bottom);
     if (isCute == true)
