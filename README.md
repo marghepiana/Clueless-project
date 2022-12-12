@@ -7,6 +7,10 @@
   Margherita Piana (mpiana@bu.edu)
   Marissa Ruiz (mbruiz@bu.edu)
 
+**Test Cases**
+
+IMPORTANT: We have created a testcase file to aid the process of understanding the necessary input p3 files and what they should respsectively output. This serves as a model for what we inteded to do with more complex image files.
+
 **Overview:**
 
 Our project is targeted towards people who want to be fashionable, but are not necessarily confident in their ablity to put together outfits that "slay". This project intends to help these users by looking at a user-inputted picture of a clothing article and determines if the outfit is compatible. The user will take pictures of individual articles of clothing and the program will detect whether the colors are aesthetically complementary, letting the user know if so/not.
