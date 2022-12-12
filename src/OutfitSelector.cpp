@@ -41,6 +41,17 @@ int main(){
     bottom->SetColor(bottomImageName);
     shoes->SetColor(footwearImageName);
 
+    //please uncomment the following block to see the overall color (corresponding with state enums) of each image
+
+    /*
+    cout << "Color of the hat was analyzed to be: " << hat->getColor() << endl;
+    cout << "Color of the shirt was analyzed to be: " << shirt->getColor() << endl;
+    cout << "Color of the coat was analyzed to be: " << coat->getColor() << endl;
+    cout << "Color of the bottom was analyzed to be: " << bottom->getColor() << endl;
+    cout << "Color of the shoes was analyzed to be: " << shoes->getColor() << endl;
+    cout << endl;
+    */
+
     bool isCute = isCompatible(shirt, bottom);
     if (isCute == true)
         cout << "SLAY QUEEN! your fit is FIRE! Outfit is cute girliepops :) " << endl;
