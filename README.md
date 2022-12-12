@@ -25,6 +25,7 @@ g++ Top.cpp Bottom.cpp Headwear.cpp Jacket.cpp isCompatible.cpp Footwear.cpp Ima
 They can create an executable file with such, and run our code. The only other thing to note is that the user must have their images saved in their computer as p3 ppm files. We did intend for our project to allow more complex files to be inputted, however, as per the mentioned challenges we ran into, this is a current limitation we have. There are free resources on the internet that can convert .png, .jpeg, etc. types to .ppm files.
 
 **YouTube Video Link:** 
+https://youtu.be/tWz9I_DiXwA
 
 **Additional information:**
 
