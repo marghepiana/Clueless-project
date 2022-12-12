@@ -5,5 +5,5 @@ using namespace std;
 
 class Top: public Clothing{
     public:
-        Top(string topImage);
+        Top();
 };
