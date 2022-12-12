@@ -10,6 +10,7 @@
 #include <math.h>
 #include "imgui_internal.h"
 #include "FunWidget.h"
+#include "imconfig.h"
 
 //#include <iostream>
 // Data
@@ -187,6 +188,19 @@ int main(int, char**)
             {
                 ImGui::SameLine();
                 ImGui::Text("Files Retrieved<3");
+
+            }
+            static int clicked1 = 0;
+            if (ImGui::Button("Click for Results!!"))
+                clicked1++;
+            if (clicked1 & 1)
+            {
+                ImGui::OpenPopup("hot_or_not");
+                if (ImGui::BeginPopup("hot_or_not", ImGuiWindowFlags_MenuBar))
+                {
+                    ImGui::Text("MATCH!");
+                    ImGui::EndPopup();
+                }
             }
             //ImGui::Checkbox("Demo Window", &show_demo_window);      // Edit bools storing our window open/close state
             //ImGui::Checkbox("Another Window", &show_another_window);
@@ -206,7 +220,7 @@ int main(int, char**)
         //if (show_another_window)
         {
             ImGuiIO& io = ImGui::GetIO();
-            ImGui::Begin("I am totally buggin", NULL, ImGuiWindowFlags_AlwaysAutoResize);
+            ImGui::Begin("I am totally buggin'", NULL, ImGuiWindowFlags_AlwaysAutoResize);
             ImVec2 size(320.0f, 180.0f);
             ImGui::InvisibleButton("canvas", size);
             ImVec2 p0 = ImGui::GetItemRectMin();
