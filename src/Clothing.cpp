@@ -17,49 +17,43 @@ Clothing::Clothing(){
 //based on RGB values, says which color it is on color wheel
 //mostly just basic colors, if it can't fit into a basic color it is ugly
 void Clothing::SetColor(string filename){
-
-	double* r = 0;
-	double* g = 0;
-	double* b = 0;
-
-/*
-	double r = getRed(filename);
-	double g = getGreen(filename);
-	double b = getBlue(filename);
 	
-	double* redValues = new double[1000];
-    double* greenValues = new double[1000];
-    double* blueValues = new double[1000];
+	int r = 0;
+	int g = 0;
+	int b = 0;
+    
+	r = getRed(filename);
+	g = getGreen(filename);
+	b = getBlue(filename);
 
-	int numPix = getRGBArray(filename, redValues, greenValues, blueValues);
-	*/
+	cout << " Values" << r << " " << g << " " << b << endl;
 
-	getRGB(filename, r, g, b);
-
-	if (*r == 255 && *b == 255 && *g == 255)
+	if (r == 255 && b == 255 && g == 255)
 		color = WHITE;
-	else if (*r == 0 && *b == 0 && *g == 0)
+	else if (r == 0 && b == 0 && g == 0)
 		color = BLACK;
-	else if (*r == *b && *r == *g)
+	else if (r == b && r == g)
 		color = GRAY;
-	else if (*r == *g)
+	else if (r == g)
 		color = YELLOW;
-	else if ( (*r == 255 && *b == 255) || (*r == (2 * *b) && *b >= (2* *g)))
+	else if ( (r == 255 && b == 255) || (r == (2 * b) && b >= (2* g)))
 		color = PINK;
-	else if (*r == *b || ((*b = *r*2) && (*g == 0)))
+	else if (r == b || ((b == (r *2)) && (g == 0)))
 		color = PURPLE;
-	else if ((*b == 0 && *g == 0) || *r == 255 && *g < 125 && *b < 125)
+	else if ((b == 0 && g == 0) || r == 255 && g < 125 && b < 125)
 		color = RED;
-	else if (*r == (2 * *g) && *g >= (2* *b))
+	else if (r == (2 * g) && g >= (2* b))
 		color = ORANGE;
-	else if ((*r == 0 && *b == 0) || ((*g == (2 * *b)) && *b >= (2 * *r) )|| ((*g == (2 * *r)) && *r >= (2 * *b)))
+	else if ((r == 0 && b == 0) || ((g == (2 * b)) && b >= (2 * r) )|| ((g == (2 * r)) && r >= (2 * b)))
 		color = GREEN;
-	else if ((*g == *b) && (*g >= (*r + 50) ))
+	else if ((g == b) && (g >= (r + 50) ))
 		color = CYAN;
-	else if (((*b > 2 * *g) && (*b >= 4 * *r)) ||( *r == 0 )&& (*g == 0))
+	else if (((b > 2 * g) && (b >= 4 * r)) ||( r == 0 )&& (g == 0))
 		color = BLUE;
     else
         color = UGLY;
+		
+
 }
 
 
