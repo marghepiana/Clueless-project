@@ -35,6 +35,14 @@ void Clothing::SetColor(string filename){
 	g = getGreen(filename, redValues, greenValues, blueValues);
 	b = getBlue(filename, redValues, greenValues, blueValues);
 
+	//please uncomment the following block to see the RGB average values of each image
+
+	/*
+	cout << "Red average value is " << r << endl;
+	cout << "Green average value is " << g << endl;
+	cout << "Blue average value is " << b << endl;
+	cout << endl;
+	*/
 	
 	//from the correspoding rgb values returned the corresponding colors are found
 	if (r == 255 && b == 255 && g == 255)
