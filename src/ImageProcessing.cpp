@@ -1,23 +1,27 @@
 #include "ImageProcessing.h"
 
 //gets overall RGB values of EVERY pixel
+
+//This function opens the ppm files imput by the user and reads each pixell's rgb values
 int getRGBArray(string filename, int* redArray, int* greenArray, int* blueArray, int state){
     
     ifstream image;
 
     image.open(filename );
-
+	
+	// here the file is opened and it is checked if it has opened correctly 
     if(!image.is_open())
     {
         cout<<"File didn't open correctly"<< endl;
 		//return 0;     
     }
-
+	
+	//values for the rgb the height and the width are stored in a string 
     string type=" ";
     string width= " ";
     string height= " ";
     string RGB= " ";
-
+	
     image>> type;
     image>> width;
     image>> height;
@@ -31,6 +35,8 @@ int getRGBArray(string filename, int* redArray, int* greenArray, int* blueArray,
     int b=0;
 
     int i=0;
+	
+//While the file has not reached the end, the string values for the rgb are converted into integers	
     
    while(!image.eof())
    //while(i<50)
@@ -46,7 +52,7 @@ int getRGBArray(string filename, int* redArray, int* greenArray, int* blueArray,
         stringstream bluestream(blue);
         bluestream>> b;
 
-        //cout<<"r"<<r<< " g"<<g<< " b"<< b<<endl;
+        // state is checked, so that the correct array in each case will be implemented
         if (state==0)
         {
             redArray[i] = r;
