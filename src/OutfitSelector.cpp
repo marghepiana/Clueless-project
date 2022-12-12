@@ -12,46 +12,47 @@
 using namespace std;
 
 int main(){
-
-    Clothing* body[5];
     
     string headwearImageName, topImageName, jacketImageName, bottomImageName, footwearImageName;
 
     //user commands and feedback
+    /*
+    cout << "Enter headwear image name: ";
     cin >> headwearImageName;
+    cout << "Enter top image name: ";
     cin >> topImageName;
+    cout << "Enter jacket image name: ";
     cin >> jacketImageName;
+    cout << "Enter bottom image name: ";
     cin >> bottomImageName;
+    cout << "Enter footwear image name: ";
     cin >> footwearImageName;
+    */
 
+    headwearImageName = "prova.ppm";
+    topImageName = "prova.ppm";
+    jacketImageName = "prova.ppm";
+    bottomImageName = "prova.ppm";
+    footwearImageName = "prova.ppm";
 
-    Headwear* hat = new Headwear(headwearImageName);
-    Top* shirt = new Top(topImageName);
-    Jacket* coat = new Jacket(jacketImageName);
-    Bottom* bottom = new Bottom(bottomImageName);
-    Footwear* shoes = new Footwear(footwearImageName);
+    Clothing* hat = new Headwear();
+    Clothing* shirt = new Top();
+    Clothing* coat = new Jacket();
+    Clothing* bottom = new Bottom();
+    Clothing* shoes = new Footwear();
 
+  
     hat->SetColor(headwearImageName);
     shirt->SetColor(topImageName);
     coat->SetColor(jacketImageName);
     bottom->SetColor(bottomImageName);
     shoes->SetColor(footwearImageName);
 
-    body[0] = hat;
-    body[1] = shirt;
-    body[2] = coat;
-    body[3] = bottom;
-    body[4] = shoes;
 
-    //template for looping through the array (head-to-toe)
-    for (int i = 0; i < 5; i++){
-
-    }
-    
-    bool slay = isCompatible(top, bottom);
-    if (slay == true)
-        cout << "SLAY QUEEN! your fit FIRE! Outfit is cute girliepops :) " << endl;
+    bool isCute = isCompatible(shirt, bottom);
+    if (isCute == true)
+        cout << "SLAY QUEEN! your fit is FIRE! Outfit is cute girliepops :) " << endl;
     else
-        cout << "Ew! As if! Those colors do not go. Fit is UGGO :(" << endl;
+        cout << "Ew! As if! Those colors do not go. Outfit is ugly :( " << endl;
 
 }
