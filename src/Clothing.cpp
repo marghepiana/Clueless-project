@@ -7,6 +7,7 @@
 #include <sstream>
 
 using namespace std;
+//This code aims to call the function that finds the rgb values promped by the user, it then detects the color of the image
 
 //default constructor
 Clothing::Clothing(){
@@ -21,19 +22,21 @@ void Clothing::SetColor(string filename){
 	int r = 0;
 	int g = 0;
 	int b = 0;
+	
+	//Three arrays that wil store the informations of the rgb values are created in the heap
 
 	int* redValues = new int[10000];
    	int* greenValues = new int[10000];
-	 int* blueValues = new int[10000];
+	int* blueValues = new int[10000];
 
-
-    
+	
+    	// the functions that will return the average r g b value are called and their value is stored in an integer
 	r = getRed(filename, redValues, greenValues, blueValues);
 	g = getGreen(filename, redValues, greenValues, blueValues);
 	b = getBlue(filename, redValues, greenValues, blueValues);
 
-	//cout << " Values" << r << " " << g << " " << b << endl;
-
+	
+	//from the correspoding rgb values returned the corresponding colors are found
 	if (r == 255 && b == 255 && g == 255)
 		color = WHITE;
 	else if (r == 0 && b == 0 && g == 0)
@@ -58,6 +61,8 @@ void Clothing::SetColor(string filename){
 		color = BLUE;
     else
         color = UGLY;
+	
+	// once used, to avoid memory leak, the arrays created in the heap are deleted
 		
 	delete[] redValues;
 	delete[] greenValues;
