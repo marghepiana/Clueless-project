@@ -1,5 +1,5 @@
 #include "Bottom.h"
 
-Bottom::Bottom(string bottomImage){
+Bottom::Bottom():Clothing(){
 
 }
