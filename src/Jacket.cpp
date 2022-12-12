@@ -1,5 +1,5 @@
 #include "Jacket.h"
 
-Jacket::Jacket(string jacketImage){
+Jacket::Jacket():Clothing(){
 
 }
