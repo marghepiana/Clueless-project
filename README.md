@@ -1,26 +1,28 @@
 # EC327Project
-Clueless Project
+**Clueless Project
 
-Sigma Delta Nu:
+Sigma Delta Nu:**
   Tara Gill (taragill@bu.edu)
   Suhani Mitra (suhanim@bu.edu)
   Margherita Piana (mpiana@bu.edu)
   Marissa Ruiz (mbruiz@bu.edu)
 
+**Overview:**
+
 Our project is targeted towards people who want to be fashionable, but are not necessarily confident in their ablity to put together outfits that "slay". This project intends to help these users by looking at a user-inputted picture of a clothing article and determines if the outfit is compatible. The user will take pictures of individual articles of clothing and the program will detect whether the colors are aesthetically complementary, letting the user know if so/not.
 
 More technically speaking, this program is meant to prompt the user to imput six P3 ppm files that correspond to an outfit, each file will be a component of the outfit (for example, one file is the hat, one the shirt etc..). The program will then process each of them, reads the rgb values of each pixel and find an average. There is a range for each rgb value that correspnd to a color, so for each image the dominant color will be found. The color compatabilty of each component is then checked. The program will finally inform the user wether the outfit created is compatible or not, if it's not the user will know that it's better to change the outfit. To make this program easily accessible by the user using a desktop app.
  
-How to “build” our project:
+**How to “build” our project:**
 Our project is compatible with unix. If a user has unix, they can compile our code using the following line:
 
 g++ Top.cpp Bottom.cpp Headwear.cpp Jacket.cpp isCompatible.cpp Footwear.cpp ImageProcessing.cpp OutfitSelector.cpp Clothing.cpp
 
 They can create an executable file with such, and run our code.
 
-YouTube Video Link: 
+**YouTube Video Link:** 
 
-Additional relevant information:
+**Additional relevant information:**
 
  While working on this project we encountered many difficulties in the immage processing part. Initially we tried to read the rgb value from the ppm files, unfortunately we were able to make it work only for P3 ppm files (those files have the information of the image in ascii). However the majority of images ppm files are P6. We then started to look into using open cv to analyze the picture. That didn't work because it was impossible for us to download open cv on mac, therefore we weren't able to use that option. Since we were running out of time, we decided to just make the code work for P3 ppm files, our next step would be implement its function to all ppm files.
  
