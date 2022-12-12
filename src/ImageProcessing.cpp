@@ -75,31 +75,6 @@ return i;
 
 }
 
-/*
-void getRGB(string filename, double* red, double* green, double* blue){
-    
-    int* redValues = new int[1000];
-    int* greenValues = new int[1000];
-    int* blueValues = new int[1000];
-    
-    int numPixels = getRGBArray(filename, redValues, greenValues, blueValues);
-
-    double redAvg = 0;
-    double greenAvg = 0;
-    double blueAvg = 0;
-    
-    for (int i = 0; i < numPixels; i ++){
-        redAvg += redValues[i];
-        greenAvg += greenValues[i];
-        blueAvg += blueValues[i];
-    }
-
-    *red = redAvg/numPixels;
-    *green = greenAvg/numPixels;
-    *blue = blueAvg/numPixels;
-}
-*/
-
 
 double getRed(string filename, int *redArray,int *greenArray, int *blueArray){
 
@@ -108,10 +83,12 @@ double getRed(string filename, int *redArray,int *greenArray, int *blueArray){
     int numPixels = getRGBArray(filename, redArray,greenArray, blueArray,state);
     double redAvg = 0;
 
+    //loops through array and totals the red color values
     for (int i = 0; i < numPixels; i ++){
         redAvg += redArray[i];
     }
 
+    //computes average value
     double re= redAvg/numPixels;
     return re;
 }
@@ -124,10 +101,12 @@ double getGreen(string filename, int *redArray,int *greenArray, int *blueArray){
 
     double greenAvg = 0;
 
+    //loops through array and totals the green color values
     for (int i = 0; i < numPixels; i ++){
         greenAvg += greenArray[i];
     }
 
+    //computes average value
     double gr= greenAvg/numPixels;
 
     return gr;     
@@ -136,16 +115,18 @@ double getGreen(string filename, int *redArray,int *greenArray, int *blueArray){
 
 double getBlue(string filename, int *redArray,int *greenArray, int *blueArray){
 
-   int state= 2;
+    int state= 2;
  
     int numPixels = getRGBArray(filename, redArray, greenArray, blueArray, state);
 
     double blueAvg = 0;
 
+    //loops through array and totals the blue color values
     for (int i = 0; i < numPixels; i ++){
         blueAvg += blueArray[i];
     }
 
+    //computes average value
     double bl= blueAvg/numPixels;
 
     return bl;     
