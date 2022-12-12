@@ -1,5 +1,4 @@
 #include "Top.h"
 
-Top::Top(string topImage){
-
+Top::Top():Clothing(){
 }
