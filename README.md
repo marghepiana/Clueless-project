@@ -18,7 +18,7 @@ Our project is compatible with unix. If a user has unix, they can compile our co
 
 g++ Top.cpp Bottom.cpp Headwear.cpp Jacket.cpp isCompatible.cpp Footwear.cpp ImageProcessing.cpp OutfitSelector.cpp Clothing.cpp
 
-They can create an executable file with such, and run our code. The only other thing to note is that the user must have their images saved in their computer as p3 ppm files. There are free resources on the internet that can convert .png, .jpeg, etc. types to .ppm files.
+They can create an executable file with such, and run our code. The only other thing to note is that the user must have their images saved in their computer as p3 ppm files. We did intend for our project to allow more complex files to be inputted, however, as per the mentioned challenges we ran into, this is a current limitation we have. There are free resources on the internet that can convert .png, .jpeg, etc. types to .ppm files.
 
 **YouTube Video Link:** 
 
