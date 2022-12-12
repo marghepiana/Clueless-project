@@ -11,7 +11,12 @@ Our project is targeted towards people who want to be fashionable, but are not n
 
 More technically speaking, this program is meant to prompt the user to imput six P3 ppm files that correspond to an outfit, each file will be a component of the outfit (for example, one file is the hat, one the shirt etc..). The program will then process each of them, reads the rgb values of each pixel and find an average. There is a range for each rgb value that correspnd to a color, so for each image the dominant color will be found. The color compatabilty of each component is then checked. The program will finally inform the user wether the outfit created is compatible or not, if it's not the user will know that it's better to change the outfit. To make this program easily accessible by the user using a desktop app.
  
-o 1 paragraph on how to “build” your project
+How to “build” our project:
+Our project is compatible with unix. If a user has unix, they can compile our code using the following line:
+
+g++ Top.cpp Bottom.cpp Headwear.cpp Jacket.cpp isCompatible.cpp Footwear.cpp ImageProcessing.cpp OutfitSelector.cpp Clothing.cpp
+
+They can create an executable file with such, and run our code.
 
 YouTube Video Link: 
 
@@ -22,4 +27,4 @@ Additional relevant information:
  Another step we wanted to take was to incporporate texture analysis since patterns are also a big factor in outfit compatibility. For example, most people would not wear strips with polka dots. We wanted to use code we found that analyzes many different patterns in images to tell a user if their clothes are compatible. Texture analysis was more complicated because not only does it require reading in the same ppm data we were struggling with for color analysis, a lot of math like covariance determines patterns. If given more time to work on this project, we would look into pattern/texture analysis
  
  
- g++ Top.cpp Bottom.cpp Headwear.cpp Jacket.cpp isCompatible.cpp Footwear.cpp ImageProcessing.cpp OutfitSelector.cpp Clothing.cpp
+ 
