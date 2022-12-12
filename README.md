@@ -7,9 +7,9 @@ Sigma Delta Nu:
   Margherita Piana (mpiana@bu.edu)
   Marissa Ruiz (mbruiz@bu.edu)
 
-Our code 
+Our project is targeted towards people who want to be fashionable, but are not necessarily confident in their ablity to put together outfits that "slay". This project intends to help these users by looking at a user-inputted picture of a clothing article and determines if the outfit is compatible. The user will take pictures of individual articles of clothing and the program will detect whether the colors are aesthetically complementary, letting the user know if so/not.
 
-This program is meant to prompt the user to imput six P3 ppm files that correspomd to an outfit, each file will be a component of the outfit (for example, one file is the hat, one the shirt ecc..). The program will then process each of them, reafs the rgb values of each pixell ans find an average. There is a range for each rgb value that correspnd to a color, so for each image the dominant color will be found. The color compatabilty of each component is then checked. The program will finally inform the user wether the outfit created is compatible or not, if it's not the user will know that it's better to change the outfit. To make this program easilly accessible by the user using a desktop app.
+More technically speaking, this program is meant to prompt the user to imput six P3 ppm files that correspond to an outfit, each file will be a component of the outfit (for example, one file is the hat, one the shirt etc..). The program will then process each of them, reads the rgb values of each pixel and find an average. There is a range for each rgb value that correspnd to a color, so for each image the dominant color will be found. The color compatabilty of each component is then checked. The program will finally inform the user wether the outfit created is compatible or not, if it's not the user will know that it's better to change the outfit. To make this program easily accessible by the user using a desktop app.
  
 o 1 paragraph on how to “build” your project
 
