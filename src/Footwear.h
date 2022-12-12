@@ -12,5 +12,5 @@ enum FootwearType{
 
 class Footwear: public Clothing{
     public:
-        Footwear(string footwearImage);
+        Footwear();
 };
