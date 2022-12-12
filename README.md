@@ -22,7 +22,7 @@ They can create an executable file with such, and run our code.
 
 **YouTube Video Link:** 
 
-**Additional relevant information:**
+**Additional information:**
 
  While working on this project we encountered many difficulties in the immage processing part. Initially we tried to read the rgb value from the ppm files, unfortunately we were able to make it work only for P3 ppm files (those files have the information of the image in ascii). However the majority of images ppm files are P6. We then started to look into using open cv to analyze the picture. That didn't work because it was impossible for us to download open cv on mac, therefore we weren't able to use that option. Since we were running out of time, we decided to just make the code work for P3 ppm files, our next step would be implement its function to all ppm files.
  
