@@ -1,8 +1,8 @@
 #include "ImageProcessing.h"
 
 //gets overall RGB values of EVERY pixel
-int getRGBArray(string filename, double* redArray, double* greenArray, double* blueArray){
-
+int getRGBArray(string filename, int* redArray, int* greenArray, int* blueArray){
+    
     ifstream image;
 
     image.open(filename, ios:: in| ios:: binary);
@@ -30,8 +30,8 @@ int getRGBArray(string filename, double* redArray, double* greenArray, double* b
     int g=0;
     int b=0;
 
-
     int i=0;
+    
    while(!image.eof())
    //while(i<50)
     {
@@ -47,50 +47,47 @@ int getRGBArray(string filename, double* redArray, double* greenArray, double* b
         bluestream>> b;
 
         //cout<<"r"<<r<< " g"<<g<< " b"<< b<<endl;
-        redArray[i] = r;
-        greenArray[i] = g;
-        blueArray[i] = b;
-
-    i++;
-
+        *(redArray + i) = r;
+        *(greenArray + i) = g;
+        *(blueArray + i) = b;
+        i++;
     }
 
-    //cout<<i;
-
 image.close();
-//return 0;
 return i;
 
 }
 
+/*
 void getRGB(string filename, double* red, double* green, double* blue){
-    double* redValues = new double[1000];
-    double* greenValues = new double[1000];
-    double* blueValues = new double[1000];
-
+    
+    int* redValues = new int[1000];
+    int* greenValues = new int[1000];
+    int* blueValues = new int[1000];
+    
     int numPixels = getRGBArray(filename, redValues, greenValues, blueValues);
+
     double redAvg = 0;
     double greenAvg = 0;
     double blueAvg = 0;
-
+    
     for (int i = 0; i < numPixels; i ++){
         redAvg += redValues[i];
         greenAvg += greenValues[i];
         blueAvg += blueValues[i];
-
     }
+
     *red = redAvg/numPixels;
-    *green = greenAvg = numPixels;
+    *green = greenAvg/numPixels;
     *blue = blueAvg/numPixels;
-    
-
 }
+*/
 
-/*
+
 double getRed(string filename){
-    int* redValues = new int[900];
-    int* greenValues = new int[900];
-    int* blueValues = new int[900];
+    int* redValues = new int[6700];
+    int* greenValues = new int[6700];
+    int* blueValues = new int[6700];
 
     int numPixels = getRGBArray(filename, redValues, greenValues, blueValues);
     double redAvg = 0;
@@ -103,9 +100,9 @@ double getRed(string filename){
 }
 
 double getGreen(string filename){
-    int* redValues = new int[900];
-    int* greenValues = new int[900];
-    int* blueValues = new int[900];
+    int* redValues = new int[6700];
+    int* greenValues = new int[6700];
+    int* blueValues = new int[6700];
 
     int numPixels = getRGBArray(filename, redValues, greenValues, blueValues);
 
@@ -120,9 +117,9 @@ double getGreen(string filename){
 
 
 double getBlue(string filename){
-    int* redValues = new int[900];
-    int* greenValues = new int[900];
-    int* blueValues = new int[900];
+    int* redValues = new int[6700];
+    int* greenValues = new int[6700];
+    int* blueValues = new int[6700];
  
     int numPixels = getRGBArray(filename, redValues, greenValues, blueValues);
 
@@ -134,4 +131,3 @@ double getBlue(string filename){
 
     return blueAvg/numPixels;     
 }
-*/
