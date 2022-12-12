@@ -1,7 +1,7 @@
 # EC327Project
-**Clueless Project
+**Clueless Project**
 
-Sigma Delta Nu:**
+**Sigma Delta Nu:**
   Tara Gill (taragill@bu.edu)
   Suhani Mitra (suhanim@bu.edu)
   Margherita Piana (mpiana@bu.edu)
