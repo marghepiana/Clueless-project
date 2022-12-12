@@ -5,6 +5,8 @@
 
 using namespace std;
 
+
+//heather file foe clothing.cpp
 //enumeration declaration for the attributes of an article of clothing
 enum Colors{
     RED = 0,
