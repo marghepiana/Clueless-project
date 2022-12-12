@@ -12,5 +12,5 @@ enum HeadwearType{
 
 class Headwear: public Clothing{
     public:
-        Headwear(string headwearImage);
+        Headwear();
 };
