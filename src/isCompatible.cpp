@@ -23,6 +23,8 @@ bool isCompatible(Clothing top, Clothing bottom){
 		return true;
 	else if (top.getColor() == RED && bottom.getColor() == PINK)
 		return true;
-	else 
+	else if (top.getColor() == UGLY || bottom.getColor() == UGLY)
+		return false;
+	else
 		return false;
 }
