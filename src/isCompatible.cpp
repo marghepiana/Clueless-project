@@ -12,7 +12,7 @@ bool isCompatible(Clothing top, Clothing bottom){
 	else if (top.getColor() == GRAY || bottom.getColor() == GRAY)
 		return true;
 	else if (bottom.getColor() == BLUE)
-		return true
+		return true;
 	else if (top.getColor() == PINK && bottom.getColor() == GREEN)
 		return true;
 	else if (top.getColor() == GREEN && bottom.getColor() == YELLOW)
