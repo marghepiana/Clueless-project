@@ -1,6 +1,10 @@
 #ifndef CLOTHING_H
 #define CLOTHING_H
 
+#include <iostream>
+
+using namespace std;
+
 //enumeration declaration for the attributes of an article of clothing
 enum Colors{
     RED = 0,
